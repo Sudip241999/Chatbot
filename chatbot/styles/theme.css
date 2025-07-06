@@ -1,0 +1,123 @@
+/* Main app styling */
+.stApp {
+    background-color: #343541;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #202123 !important;
+    border-right: none !important;
+}
+
+/* Chat container */
+.main .block-container {
+    padding-top: 0;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Message bubbles */
+.stChatMessage {
+    padding: 24px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* User message */
+[data-testid="stChatMessage"][aria-label="user"] {
+    background-color: #343541;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Assistant message */
+[data-testid="stChatMessage"][aria-label="assistant"] {
+    background-color: #444654;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Avatar styling */
+.stChatMessage .stAvatar {
+    background-color: transparent !important;
+    font-size: 28px;
+}
+
+/* Input area */
+[data-testid="stVerticalBlock"] > [style*="flex-grow: 1"] {
+    background-color: #40414f;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Input text box */
+.stTextArea textarea {
+    color: white !important;
+    background-color: #40414f !important;
+}
+
+/* Send button */
+.stButton button {
+    background-color: #19c37d !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 6px 12px !important;
+}
+
+/* Sidebar buttons */
+.sidebar .stButton button {
+    background-color: transparent !important;
+    color: white !important;
+    border: 1px solid #4d4d4f !important;
+    border-radius: 6px !important;
+    margin: 8px 0 !important;
+    width: 100% !important;
+    text-align: left;
+    padding: 10px 14px !important;
+}
+
+/* New chat button */
+.sidebar .stButton button:first-child {
+    border: 1px solid #4d4d4f !important;
+}
+
+/* Chat history items */
+.chat-history-item {
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 4px 0;
+    cursor: pointer;
+    color: white;
+}
+
+.chat-history-item:hover {
+    background-color: #2b2c2f;
+}
+
+.chat-history-item.active {
+    background-color: #40414f;
+}
+
+/* Hide Streamlit elements */
+.stDeployButton, footer, #MainMenu {
+    visibility: hidden;
+    display: none;
+}
+
+
+/* Sidebar scrollable */
+[data-testid="stSidebar"] > div:first-child {
+    height: 100vh !important;
+    overflow-y: auto;
+}
+/* Target all sidebar buttons */
+section[data-testid="stSidebar"] button {
+    background-color: #0b0a0a !important;  /* Light grey */
+    color: rgb(196, 165, 165) !important;
+    font-weight: 500;
+}
+
+section[data-testid="stSidebar"] button:hover {
+    background-color: #2b1c1c !important;
+}
